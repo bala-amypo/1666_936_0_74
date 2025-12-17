@@ -10,8 +10,27 @@ public class StudentEntity(){
     private String password;
     private Date created;
 
-public Date get
+public Date getCreated(){
+    return created;
+}
+public void setCreated(Date created){
+    this.created=created;
+}
 public void setId(Integer id){
     this.id=id;
 }
+public String getName(){
+    return name;
+}
+public void setName(){
+    this.name=name;
+}
+public
+public String getPassword(){
+    return password;
+}
+public void setPasswod(){
+    this.password=password;
+}
+
 }

@@ -1,12 +1,16 @@
 package com.example.demo.service.Impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.example.demo.service.StudentService;
+import com.exampledemo.entity.StudentEntity;
+import com.example.demo.service.StudentService;
 
 @Service
 public class StudentServiceImpl implements StudentService{
+@Autowired StudentRepo student; 
 
-StudentEntity postData(StudentEntity stu);
+
+public StudentEntity postData(StudentEntity stu);
 
 }
 

@@ -47,14 +47,14 @@ public void setPasswod(String password){
     this.password=password;
 }
 
-public StudeEntity(Integer id,String name,String email,String password,Date created){
+public StudentEntity(Integer id,String name,String email,String password,Date created){
     this.id=id;
     this.name=name;
     this.email=email;
     this.password=password;
     this.created=created;
 }
-public SampleEntity(){
+public StudentEntity(){
 
 }
 

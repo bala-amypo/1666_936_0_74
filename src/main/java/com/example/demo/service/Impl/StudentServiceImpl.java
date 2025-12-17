@@ -9,9 +9,14 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService{
 @Autowired StudentRepo student; 
 
+// save()
+// findAll()
+// findById()
+// deleteById()
+// existById()
 
 public StudentEntity postData(StudentEntity stu);
-
+    return student.save(stu);
 }
 
 

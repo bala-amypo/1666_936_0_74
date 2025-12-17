@@ -3,8 +3,10 @@ public com.example.demo.service;
 import com.example.demo.entity.StudentEntity;
 
 public interface StudentService{
-    
-StudentEntity postData(StudentEntity stu);
+
+public StudentEntity postData(StudentEntity stu){
+
+}
 
 }
 

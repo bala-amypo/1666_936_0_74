@@ -25,12 +25,26 @@ public String getName(){
 public void setName(){
     this.name=name;
 }
-public
+public String getEmail(){
+    return email;
+}
+public void setEmail(){
+    this.email=email;
+}
 public String getPassword(){
     return password;
 }
-public void setPasswod(){
+public void setPasswod(String password){
     this.password=password;
 }
+
+public SampleEntity(Integer id,String name,String email,String password,Date created){
+    this.id=id;
+    this.name=name;
+    this.email=email;
+    this.password=password;
+    this.created
+}
+
 
 }

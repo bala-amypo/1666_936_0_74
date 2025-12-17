@@ -47,7 +47,7 @@ public void setPasswod(String password){
     this.password=password;
 }
 
-public SampleEntity(Integer id,String name,String email,String password,Date created){
+public StudeEntity(Integer id,String name,String email,String password,Date created){
     this.id=id;
     this.name=name;
     this.email=email;

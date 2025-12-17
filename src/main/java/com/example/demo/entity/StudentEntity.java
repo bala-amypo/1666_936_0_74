@@ -5,12 +5,13 @@ package com.example.demo.entity
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenertationType;
 
 @Entity
 public class StudentEntity(){
 
     @Id
-    @GeneratedValue(strategy=GenertationTy)
+    @GeneratedValue(strategy=GenertationType.IDENTITY)
 
     private Integer id;
     private String name;

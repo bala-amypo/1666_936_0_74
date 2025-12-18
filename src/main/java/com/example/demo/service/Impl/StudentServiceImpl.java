@@ -29,7 +29,7 @@ public List<StudentEntity>getAllData(){
 @Override
 public String DeleteData(@PathVariable int id){
 student.deleteById(id);
-return "Deleted successfully"
+return "Deleted successfully";
 }
 }
 

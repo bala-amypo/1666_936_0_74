@@ -29,7 +29,7 @@ public String deleteVal(@PathVariable int id){
     return ser.DeleteData(id);
 }
 @GetMapping("/get/{id}")
-public StudentEntity getdataid(@Pathvariable int id){
+public StudentEntity getDataid(@Pathvariable int id){
     return ser.getData(id);
 }
 }

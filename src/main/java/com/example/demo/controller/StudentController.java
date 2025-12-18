@@ -33,6 +33,10 @@ public String deleteVal(@PathVariable int id){
 public StudentEntity getDataid(@PathVariable int id){
     return ser.getData(id);
 }
+@PutMapping("/put/{id}")
+public StudentEntity putval(@PathVariable int id,@RequestBody StudentEntity entity){
+    return ser.updateData(id,entity);
+}
 }
 
 

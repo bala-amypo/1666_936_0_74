@@ -36,7 +36,9 @@ public StudentEntity getData(int id){
 }
 @Override
 public StudentEntity updateData(int id,StudentEntity entity){
-    return 
+    if(student.existsById(id)){
+        
+    }
 }
 }
 

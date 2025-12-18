@@ -15,31 +15,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
 import java.util.List;
+import java.Validation.Valid;
 
 @RestController
-public class StudentController{
-@Autowired StudentService ser;
+public class ValidationController{
+@Autowired ValidationService ser;
 
-@PostMapping("/post")
-public ValidationEntity postData(@Valid.@RequestBody StudentEntity stu){
+@PostMapping("/validpost")
+public ValidationEntity postData(@Valid @RequestBody ValidationEntity stu){
 return ser.postData(stu);
 }
-// @GetMapping("/get")
-// public List<StudentEntity>getval(){
-//     return ser.getAllData();
-// }
-// @DeleteMapping("/delete/{id}")
-// public String deleteVal(@PathVariable int id){
-//     return ser.DeleteData(id);
-// }
-// @GetMapping("/get/{id}")
-// public StudentEntity getDataid(@PathVariable int id){
-//     return ser.getData(id);
-// }
-// @PutMapping("/put/{id}")
-// public StudentEntity putval(@PathVariable int id,@RequestBody StudentEntity entity){
-//     return ser.updateData(id,entity);
-// }
 }
 
 

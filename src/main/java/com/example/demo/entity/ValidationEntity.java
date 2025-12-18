@@ -28,7 +28,9 @@ public class ValidationEntity{
     @Positive(message="Age is be a positive number")
     private int age;
 
-
+public int getId(){
+    return id;
+}
 public void setId(Long id){
     this.id=id;
 }

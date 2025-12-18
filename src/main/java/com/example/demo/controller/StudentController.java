@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
-
+import java.util.List;
 
 @RestController
 public class StudentController{
@@ -19,7 +19,9 @@ public StudentEntity sendData(@RequestBody StudentEntity stu){
 return ser.postData(stu);
 }
 @GetMapping("/get")
-
+public List<StudentEntity>getval(){
+    return ser.getAllData();
+}
 }
 
 

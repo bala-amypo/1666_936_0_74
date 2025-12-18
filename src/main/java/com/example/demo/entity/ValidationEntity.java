@@ -38,7 +38,7 @@ public String getUserName(){
     return name;
 }
 public void setUserName(){
-    this.name=name;
+    this.uname=name;
 }
 public String getEmail(){
     return email;
@@ -52,10 +52,10 @@ public String getPassword(){
 public void setPasswod(String password){
     this.password=password;
 }
-public String getAge(){
+public int getAge(){
     return age;
 }
-public void setAge(String password){
+public void setAge(){
     this.age=age;
 }
 public ValidationEntity(Long id,

@@ -35,10 +35,10 @@ public Long getId(){
 public void setId(Long id){
     this.id=id;
 }
-public String getUserName(){
+public String getUsername(){
     return username;
 }
-public void setUserName(){
+public void setUsername(){
     this.username=username;
 }
 public String getEmail(){

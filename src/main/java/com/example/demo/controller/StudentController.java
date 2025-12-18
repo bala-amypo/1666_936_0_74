@@ -30,7 +30,7 @@ public String deleteVal(@PathVariable int id){
     return ser.DeleteData(id);
 }
 @GetMapping("/get/{id}")
-public StudentEntity getDataid(@Pathvariable int id){
+public StudentEntity getDataid(@PathVariable int id){
     return ser.getData(id);
 }
 }

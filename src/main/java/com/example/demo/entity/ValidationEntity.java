@@ -32,10 +32,10 @@ public class ValidationEntity{
 public void setId(Long id){
     this.id=id;
 }
-public String getName(){
+public String getUserName(){
     return name;
 }
-public void setName(){
+public void setUserName(){
     this.name=name;
 }
 public String getEmail(){
@@ -57,17 +57,17 @@ public void setAge(String password){
     this.age=age;
 }
 public ValidationEntity(Long id,
-    @NotNull
+    @NotNull @Size(min=2,max=0,message="must be 2 to 10 character") String username,
+    @Email(message="Email is not valid") String email,
     @Size(min=2,max=0,message="must be 2 to 10 character")
-    private String username;
-    @Email(message="Email is not valid")
-    private String email;
-    @Size(min=2,max=0,message="must be 2 to 10 character")
-    @NotNull(message="password is mandatory")
-    private String password;
-    @Max(30)
-    @Positive(message="Age is be a positive number")
-    private int age;)
+    @NotNull(message="password is mandatory") String password,@Max(30)
+    @Positive(message="Age is be a positive number") int age){
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+        this.age=age;
+    }
 
 }
 

@@ -30,6 +30,10 @@ public String DeleteData(int id){
 student.deleteById(id);
 return "Deleted successfully";
 }
+@Override 
+public StudentEntity getData(int id){
+    return student.findById(id);
+}
 }
 
 

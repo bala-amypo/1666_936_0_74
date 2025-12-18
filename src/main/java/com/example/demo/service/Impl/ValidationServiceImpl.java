@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class ValidationServiceImpl  implements ValidationService{
-@Autowired StudentRepo student; 
+@Autowired ValidationRepo student; 
 
 @Override
 public ValidationEntity postData(ValidationEntity stu){

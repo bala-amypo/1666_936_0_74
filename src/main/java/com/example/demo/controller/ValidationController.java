@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.example.demo.service.StudentService;
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.service.ValidationService;
+import com.example.demo.entity.ValidationEntity;
 import java.util.List;
 import java.Validation.Valid;
 

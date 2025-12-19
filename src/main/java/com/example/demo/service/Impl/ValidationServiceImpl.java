@@ -10,11 +10,11 @@ import java.util.List;
 
 @Service
 public class ValidationServiceImpl  implements ValidationService{
-@Autowired ValidationRepo student; 
+@Autowired ValidationRepo student1; 
 
 @Override
 public ValidationEntity postData(ValidationEntity stu){
-    return student.save(stu);
+    return student1.save(stu);
 }
 @Override
 public ValidationEntity getStudentById(Long id){

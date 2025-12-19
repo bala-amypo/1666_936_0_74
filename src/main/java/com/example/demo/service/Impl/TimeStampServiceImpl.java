@@ -4,11 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TimeStampServiceImpl implements StudentService{
+public class TimeStampServiceImpl implements TimeStampService{
 @Autowired StudentRepo student; 
 
 @Override
-public StudentEntity postData(StudentEntity stu){
+public StudentEntity post(StudentEntity stu){
     return student.save(stu);
 }
 }

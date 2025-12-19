@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 import java.util.*;
 @Entity
 @Data
-@AllAgrsConstructor
-@NoAgrsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class TimeStampEntity{
     @Id
    @GeneratedValue(strategy=GenerationType.IDENTITY)

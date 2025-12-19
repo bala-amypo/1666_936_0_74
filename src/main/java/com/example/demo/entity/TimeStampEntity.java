@@ -25,7 +25,12 @@ public class TimeStampEntity{
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    
+    @Prepersist
+    public void Oncreated(){
+        LocalDataTime now=LocalDateTime{
+            
+        }
+    }
 }
 
 

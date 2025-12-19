@@ -27,7 +27,7 @@ public class TimeStampEntity{
     private String name;
     private String email;
     private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private LocalDateTime updateAt;
 
     @PrePersist
     public void Oncreated(){

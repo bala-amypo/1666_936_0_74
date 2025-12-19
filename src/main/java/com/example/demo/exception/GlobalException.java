@@ -1,15 +1,16 @@
 package com.example.demo.exception;
 
 
-public org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @RestControllerAdvice
 public class GlobalException{
 
-
-    @ExceptionHandler(ValidationException.class)
-public ResponseBody<String>handleValidationException(){
-    
+@ExceptionHandler(ValidationException.class)
+public ResponseBody<String>handleValidationException(ValidationException ex){
+return new ResponseBody<String>();
 }
 }
 

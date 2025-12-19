@@ -3,23 +3,10 @@ package com.example.demo.entity;
 
 import java.time.localDateTime;
 
-public class TimeStampEntity{
-
-private LocalDateTime createAt;
-private LocalDateTime updateAt;
-
-    private Long id;
-    private String name;
-    private String email;
-
-
-}
-
-package com.example.demo.entity;
-
 import jakarta.validation.constraints.*;
 import jakata.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 import java.util.*;
 @Entity
 @Data
@@ -27,7 +14,7 @@ import java.util.*;
 @Setter
 @AllAgrsConstructor
 @NoAgrsConstructor
-public class TimeSampEntity{
+public class TimeStampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY);
     private Long id;
@@ -36,4 +23,7 @@ public class TimeSampEntity{
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }
+
+
+
 

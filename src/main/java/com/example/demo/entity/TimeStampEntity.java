@@ -40,6 +40,8 @@ public class TimeStampEntity{
         LocalDateTime now=LocalDateTime.now();
         this.updateAt=now;
     }
+
+    
 }
 
 

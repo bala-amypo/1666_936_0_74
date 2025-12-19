@@ -10,6 +10,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.Prepersist;
+Prepersist;
 
 import java.util.*;
 @Entity
@@ -18,14 +20,15 @@ import java.util.*;
 @NoArgsConstructor
 public class TimeStampEntity{
     @Id
-   @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-LocalDataTime now=LocalDateTime().now();
+
     @Prepersist
+    LocalDataTime now=LocalDateTime().now();
     public void Oncreated(){
        this.createdAt=now;
        this.updateAt=now;

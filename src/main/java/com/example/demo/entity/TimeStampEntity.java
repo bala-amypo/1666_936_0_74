@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import java.time.LocalDateTime;
+import j.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -10,8 +10,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import jakarta.persistence.Prepersist;
-import jakarta.persistence.Preupdate;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 import java.util.*;
 @Entity
@@ -27,13 +27,13 @@ public class TimeStampEntity{
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    @Prepersist
+    @PrePersist
     public void Oncreated(){
         LocalDataTime now=LocalDateTime.now();
        this.createdAt=now;
        this.updateAt=now;
     }
-    @Preupdate
+    @PreUpdate
     public void Onupdate(){
         LocalDataTime now=LocalDateTime.now();
         this.updateAt=now;

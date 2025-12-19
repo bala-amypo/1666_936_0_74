@@ -11,7 +11,7 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.Prepersist;
-Prepersist;
+import jakarta.persistence.Preupdate;
 
 import java.util.*;
 @Entity
@@ -28,12 +28,13 @@ public class TimeStampEntity{
     private LocalDateTime updatedAt;
 
     @Prepersist
-    LocalDataTime now=LocalDateTime().now();
     public void Oncreated(){
+        LocalDataTime now=LocalDateTime.now();
        this.createdAt=now;
        this.updateAt=now;
     }
-    @Prepersist
+    @Preupdate
+    
     public void Onupdate(){
         this.updateAt=now;
     }

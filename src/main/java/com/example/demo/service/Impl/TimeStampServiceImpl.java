@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TimeStampServiceImpl implements TimeStampService{
-@Autowired StudentRepo student; 
+@Autowired TimeStampRepo student; 
 
 @Override
-public StudentEntity post(StudentEntity stu){
+public TimeStampEntity post(TimeStampEntity stu){
     return student.save(stu);
 }
 }

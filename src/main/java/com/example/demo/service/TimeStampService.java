@@ -1,10 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.entity.TimeStampEntity;
 import java.util.List;
 
 
-public class TimeStampService{
+public interface TimeStampService{
  TimeStampEntity postData(TimeStampEntity stu);
+ List<TimeStampEntity>getAllData();
 }
 

@@ -24,6 +24,8 @@ public class TimeStampEntity{
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+
+    
 }
 
 

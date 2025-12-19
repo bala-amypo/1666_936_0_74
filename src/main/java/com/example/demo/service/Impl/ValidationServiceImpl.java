@@ -17,7 +17,7 @@ public ValidationEntity postData(ValidationEntity stu){
 }
 @Override
 public ValidationEntity getStudentById(Integer id){
-    return repo.findById(id).orElseThrow(()->new ValidationException(null));
+    return repo.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
 }
 }
 

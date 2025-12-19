@@ -19,6 +19,7 @@ import lombok.Setter;
 @Entity
 @Data
 
+
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

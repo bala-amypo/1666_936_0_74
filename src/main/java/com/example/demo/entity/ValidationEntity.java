@@ -16,7 +16,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
-import java.time.localDateTime;
+
 
 @Entity
 @Data
@@ -38,8 +38,7 @@ public class ValidationEntity{
     @Positive(message="Age is be a positive number")
     private int age;
 
-private LocalDateTime createAt;
-private LocalDateTime updateAt;
+
 }
 
 
